@@ -122,10 +122,6 @@ h2+p{
         padding: unset;
     }
 
-    .pad {
-        padding: 0 0 0 20px;
-    }
-
     h2.tm-section-title {
         color: blue;
     }
@@ -152,10 +148,10 @@ h2+p{
         text-align: center;
     }
     #home::before{
-    display: none;
-}
-
-.tm-main-content section:nth-child(2)::before{
         display: none;
-}
+    }
+
+    .tm-main-content section:nth-child(2)::before{
+        display: none;
+    }
 }
