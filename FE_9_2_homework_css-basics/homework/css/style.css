@@ -1,106 +1,108 @@
-a {
-    color: black;
-}
-a:hover{
-    color: deepskyblue;
-}
-.pad ol li a:visited{
-    color:lightgray;
-}
-sup{
-    color:red;
-} 
-.tm-main-nav{
-    padding: 0;
-}
-.box img{
-    border-radius: 125px;
-}
-.box-bg:hover{
-    background-color: deepskyblue;
-}
-.box-bg h2:hover{
-    color: white;
-    font-weight: bold;
-}
-.first-letter{
-    color: #76cdd7;
-    font-size: 30px;
-}
-.first-letter-bigger{
-    color: #76cdd7;
-    font-size: 26px;
-    margin-left: 8%;
-}
-.tm-content-box, .tm-sidebar{
-    box-shadow: 0 0 15px 1px grey;
-}
-#home::before{
-    content: '';
-    width: 0; 
-    height: 0;     
-    border-top: -20px solid transparent;
-    border-bottom: 23px solid transparent;
-    border-left: 110px solid deepskyblue;
-    float: left;
-}
+@media screen{    
+    a {
+        color: black;
+    }
+    a:hover{
+        color: deepskyblue;
+    }
+    .pad ol li a:visited{
+        color:lightgray;
+    }
+    sup{
+        color:red;
+    } 
+    .tm-main-nav{
+        padding: 0;
+    }
+    .box img{
+        border-radius: 125px;
+    }
+    .box-bg:hover{
+        background-color: deepskyblue;
+    }
+    .box-bg h2:hover{
+        color: white;
+        font-weight: bold;
+    }
+    .first-letter{
+        color: #76cdd7;
+        font-size: 30px;
+    }
+    .first-letter-bigger{
+        color: #76cdd7;
+        font-size: 26px;
+        margin-left: 8%;
+    }
+    .tm-content-box, .tm-sidebar{
+        box-shadow: 0 0 15px 1px grey;
+    }
+    #home::before{
+        content: '';
+        width: 0; 
+        height: 0;     
+        border-top: -20px solid transparent;
+        border-bottom: 23px solid transparent;
+        border-left: 110px solid deepskyblue;
+        float: left;
+    }
 
-.tm-main-content section:nth-child(2)::before,
-.tm-main-content section:nth-child(3)::before,
-.tm-main-content section:nth-child(4)::before,
-.tm-main-content section:nth-child(5)::before{
-    content: '';
-    width: 0; 
-    height: 0;     
-    border-top: -20px solid transparent;
-    border-bottom: 23px solid transparent;
-    border-left: 110px solid deepskyblue;
-    float: left;
-}
-#title-gainsboro{
-    color: gainsboro;
-    letter-spacing: 5px;
-}
-h2+p{
-    font-style: italic;
-}
-.tm-main-nav ul li:nth-of-type(-n+3){
-    border-bottom: 1.5px silver dotted;
-}
-.contact-form div input:nth-of-type(-n+3){
-    color: red;
-}
-.contact-form div:nth-child(2)::after{
-    content: '*';
-    color: red;
-    float:right;
-}
-.submit-btn{
-    color: red;
-}
-.submit-btn:hover{
-    color: white;
-    background-color: deepskyblue; 
-}
-.heading .pad h2 {
-    color:deepskyblue;
-    text-align: center;
-}
-.box .img-blocks{
-    border-radius: 0;
-}
-.box div h2{
-    letter-spacing: 5px;
-    font-size: 36px;
-}
-.box div span{
-    font-size: 30px;
-}
-.box div p{
-    font-size: 20px;
-}
-.blocks .tm-content-box .boxes .box:nth-child(odd){
-    background-color: ghostwhite;
+    .tm-main-content section:nth-child(2)::before,
+    .tm-main-content section:nth-child(3)::before,
+    .tm-main-content section:nth-child(4)::before,
+    .tm-main-content section:nth-child(5)::before{
+        content: '';
+        width: 0; 
+        height: 0;     
+        border-top: -20px solid transparent;
+        border-bottom: 23px solid transparent;
+        border-left: 110px solid deepskyblue;
+        float: left;
+    }
+    #title-gainsboro{
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+    h2+p{
+        font-style: italic;
+    }
+    .tm-main-nav ul li:nth-of-type(-n+3){
+        border-bottom: 1.5px silver dotted;
+    }
+    .contact-form div input:nth-of-type(-n+3){
+        color: red;
+    }
+    .contact-form div:nth-child(2)::after{
+        content: '*';
+        color: red;
+        float:right;
+    }
+    .submit-btn{
+        color: red;
+    }
+    .submit-btn:hover{
+        color: white;
+        background-color: deepskyblue; 
+    }
+    .heading .pad h2 {
+        color:deepskyblue;
+        text-align: center;
+    }
+    .box .img-blocks{
+        border-radius: 0;
+    }
+    .box div h2{
+        letter-spacing: 5px;
+        font-size: 36px;
+    }
+    .box div span{
+        font-size: 30px;
+    }
+    .box div p{
+        font-size: 20px;
+    }
+    .blocks .tm-content-box .boxes .box:nth-child(odd){
+        background-color: ghostwhite;
+    }
 }
 
 @media print {
