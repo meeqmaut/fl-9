@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontFamily;
+  background: $backgroundContent;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: $mainColor;
+}
+
+header {
+  display: flex;
+  align-content: space-between;
+  align-items: flex-end;
+
+  .logo img {
+    width: 380px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 100%;
+    height: 60px;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+    a {
+      text-decoration: none;
+      color: $mainColor;
+
+      &:hover {
+        color: lighten($mainColor, 10);
+      }
+
+      &:active {
+        color: darken($mainColor, 10);
+      }
+    }
+  }
+}
+
+.main-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  text-align: right;
+
+  input {
+    width: 200px;
+    height: 45px;
+    border: 1px solid $mainColor;
+    padding: 10px 15px;
+    margin: 15px 0;
+    background-color: transparent;
+  }
+}
+
+.toolbar ::placeholder {
+  color: $mainColor;
+}
+
+.post-list {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  article {
+    flex: 0 48%;
+    margin-bottom: 20px;
+    padding: 7px;
+    background-color: $backgroundCard;
+
+    .post-description {
+      color: $postDescrColor;
+      border-bottom: 1px solid $borderColor;
+      margin-bottom: 10px;
+      font-size: .8em;
+      padding-top: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    div {
+      padding: 7px;
+
+      h3 {
+        color: $headerColor;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: $borderColor;
+        line-height: 1.6em;
+        margin-bottom: 1.2em;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+  h1 {
+    color: $mainColor;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 60px;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+    color: $borderColor;
+    line-height: 1.7em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+};
+
+.contact-form{
+  margin-top: 50px;
+  text-align: right;
+
+  h1,
+  h4 {
+    color: $mainColor;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  form {
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border: 1px solid $formColor;
+
+      &::placeholder {
+        color: $formColor;
+      }
+    }
+
+    input[type=submit] {
+      background-color: $mainColor;
+      color: white;
+      width: 200px;
+      height: 40px;
+      border: none;
+      text-transform: uppercase;
+      line-height: 30px;
+      font-weight: bold;
+      padding: unset;
+      cursor: pointer;
+
+      &:hover {
+        background-color: lighten($mainColor, 10);
+      }
+
+      &:active {
+        background-color: darken($mainColor, 10);
+      }
+    }
+  }
+}
+
+footer {
+  margin-bottom: 10px;
+
+  span {
+    color: $borderColor;
+    font-size: .8em;
+  }
+}
