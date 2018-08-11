@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans';
+}
+header{
+    height: 740px;
+    background: url("../img/apples.jpg") center no-repeat;
+}
+.wrapper{
+/*    max-width: 1200px;*/
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.logo{
+    text-decoration: none;
+    color: #F3F3F3;
+    letter-spacing: 0.3em;
+    font-size: 0.9em;
+    flex-grow: 1;
+}
+
+.navigation{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+nav{
+    width: 30%;
+    flex-grow: 1;
+}
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.main-nav-li{
+    display: flex;
+    justify-content: space-between;
+    padding:  0 15px;
+    margin: 0 3%;
+}
+.main-nav-li a{
+    color: #F3F3F3;
+    text-decoration: none;
+}
+.main-nav-li a:hover{
+    color: #FFF;
+}
+.main-title{
+    width: 600px;
+    height: 300px;
+    margin: 200px auto 0;
+    text-align: center;
+    color: #FFF;
+}
+.brand{
+    font-size: 2.8em;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+}
+.brand-amp{
+    font-size: 2.1em;
+}
+.under-brand{
+    color: #F3F3F3;
+    font-size: 0.9em;
+}
+.show-more{
+    height: 50px;
+    width: 250px;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 580px;
+    color: #F3F3F3;
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid #F3F3F3;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+.show-more:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.about{
+    height:320px; 
+    display: flex;
+    align-items: center;
+}
+.about-text{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about-h{
+    width: 50%;
+    padding: 30px 60px 30px 0;
+}
+.h2-style{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.bold{
+    font-weight: 600;
+}
+.about-p{
+    width:50%;
+    padding: 30px 0 30px 60px;
+    color: #343638;
+}
+.p-style{
+    font-size: 0.9em;
+}
+.articles{
+    background-color: #F3F3F3;
+    height: 100%;
+}
+.center{
+    text-align: center;
+    padding: 150px 0 100px;
+}
+.featured-article{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: 2% 0;
+}
+.first-img-part{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 2%;
+    background-image: url(../img/sample.jpg);
+    background-size: cover;
+    box-shadow:
+        0 0 200px #343638 inset,
+        0 0 150px #343638 inset;
+}
+.text-part{
+    width: 40%;
+    text-align: center;
+/*    font-size: 0.9em;*/
+    align-self: center;
+}
+.like{
+    margin: 20px 20px 0 auto;
+    width: 60px;
+    height: 32px;
+    padding-top: 3px;
+    color: #F3F3F3;
+    background-color: rgba(0,0,0,0.4);
+    border: 2px solid #F3F3F3;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+}
+.like::after {
+    content: "\002665";
+    padding-left: 5px;
+}
+.like:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.date{
+    margin: 0 auto 10px 20px;
+    color: #F3F3F3;
+    font-size: 0.9em;
+}
+.featured-article:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.second-img-part{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 2%;
+    background-image: url(../img/sample3.jpg);
+    background-size: cover;
+    box-shadow:
+        0 0 200px #343638 inset,
+        0 0 150px #343638 inset;
+}
+.subscription{
+    height: 130px;
+    background-color: #FFF;
+    margin: 4% 0;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.subscription-form{
+    margin: 0 2%;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.h2-subscription{
+    margin-left: 2%;
+}
+.email{
+    width: 100%;    
+    padding: 15px;
+    margin-left: auto;
+    margin-right: -1%;
+    background-color: #F3F3F3;
+    border: 1px solid #343638;
+}
+input[type="email"]::placeholder{
+    color: #343638;
+}
+.subscription-btn{
+    padding: 16px ;
+    color: #fff;
+    background-color: #343638;
+    border: none;
+    cursor: pointer;
+}
+.subscription-btn:hover{
+    background-color: #000;
+}
+footer{
+    margin-top: 5%;
+}
+h4{
+    margin-bottom: 6%;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.footer-div{
+    width: 23%;
+/*    margin: 0 2%;*/
+}
+h4+p{
+    color: #9E9E9E;
+}
+.italic{
+    font-style:italic;
+}
+.contacts{
+    color: #9E9E9E;
+    line-height: 1.7em;
+    align-items: stretch;
+}
+.tweet-time{
+    color:#E8E8E8;
+    margin-top: 2%;
+}
+.footer-form-div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.subscription-form-footer{
+/*    width: 100%;*/
+    margin-top: 2%;
+    max-height: 35px;
+/*    margin-right: 0;*/
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.email-footer{
+    width: 100%;    
+    padding: 9px;
+    margin-left: auto;
+    margin-right: -1%;
+    background-color: #F3F3F3;
+    border: 1px solid #343638;
+    flex-grow: 1;
+}
+.subscription-btn-footer{
+    width: 40%;
+    padding: 5px ;
+    color: #fff;
+    background-color: #343638;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.subscription-btn-footer:hover{
+    background-color: #000;
+}
+.under-footer{
+    height: 50%;
+}
+.under-footer-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+.under-footer-item{
+    list-style: none;
+}
+.copy{
+    margin-right: auto;
+    color:#9E9E9E;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.under-footer-item:nth-child(n+2):nth-child(-n+4){
+    margin-right:2%;
+}
+.under-footer-item:nth-child(n+2):nth-child(-n+5){
+    font-size: 0.8em;
+}
+.under-footer-item a{
+    color:#343638;
+    text-decoration: none;
+    font-weight: 600;
+}
+.under-footer-item a:hover{
+    color:#000;
+}
+hr{
+    border:1px solid #E8E8E8;
+}
