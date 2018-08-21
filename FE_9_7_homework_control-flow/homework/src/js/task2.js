@@ -2,7 +2,7 @@ const magicNumbers = {
     one: 1,
     five: 5,
     ten: 10
-}
+};
 
 let maxNum = 5;
 let totalPrize = 0;
@@ -66,11 +66,3 @@ Possible prize on current attempt: ${currentPossiblePrize}`);
             }
         }
     }
-
-
-
-
-
-
-
-
