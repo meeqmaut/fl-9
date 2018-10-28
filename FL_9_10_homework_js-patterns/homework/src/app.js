@@ -34,7 +34,7 @@ const setBonus = (store) => {
 };
 
 
-const store1 = new Store(4.20);
-getDiscount(store1);
-setBonus(store1);
-console.log(store1.totalPrice);
+const storeOne = new Store(4.20);
+getDiscount(storeOne);
+setBonus(storeOne);
+console.log(storeOne.totalPrice);
