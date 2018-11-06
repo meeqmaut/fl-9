@@ -1,0 +1,45 @@
+
+@import 'material-icons'; // self hosted material icons
+
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.player{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.panel{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.playlist{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.tracks{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.track{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    background-color: dimgrey;
+    border-radius: 15px;
+    margin: 2px 0;
+}
+.material-icons{
+    cursor: pointer;
+}
