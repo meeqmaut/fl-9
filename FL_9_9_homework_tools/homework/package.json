@@ -35,6 +35,6 @@
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "moment": "^2.21.0"
+    "moment": "^2.29.2"
   }
 }
